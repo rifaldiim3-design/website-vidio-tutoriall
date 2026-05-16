@@ -1,0 +1,14 @@
+function searchRumah() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let items = document.querySelectorAll(".rumah-item");
+
+    items.forEach(item => {
+        let lokasi = item.getAttribute("data-lokasi");
+
+        if (lokasi.includes(input)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}

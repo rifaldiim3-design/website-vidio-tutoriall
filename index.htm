@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Impian</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Rumah Impian</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+      </ul>
+      <button class="btn btn-light ms-3">Masuk</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-white d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6">
+        <h1 class="fw-bold">Membantu Temukan penginapan Impian</h1>
+        <p>Temukan penginapan terbaik dengan harga terjangkau</p>
+
+        <!-- Search -->
+        <div class="input-group mt-3">
+          <input type="text" id="searchInput" class="form-control" placeholder="Cari lokasi...">
+          <button class="btn btn-dark" onclick="searchRumah()">Cari</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="/IMAGE/217749882.jpg"width="600" height="500" alt="deskripsi">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Layanan -->
+<section class="container py-5 text-center">
+  <h2 class="mb-4">Layanan Kami</h2>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card p-3 shadow">
+        <h4>Property Baru</h4>
+        <p>Temukan penginapan terbaru</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 shadow">
+        <h4>Sewa penginapan</h4>
+        <p>Pilihan terbaik untuk sewa</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Rekomendasi -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Rekomendasi Rumah</h2>
+
+  <div class="row" id="listRumah">
+
+    <div class="col-md-4 rumah-item" data-lokasi="jakarta">
+      <div class="card shadow">
+        <img src="/IMAGE/penginapan di lombok dekat pantai.jpg">
+        <div class="card-body">
+          <h5>PENGINAPAN TETEBATU</h5>
+          <p>Rp 250.000.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 rumah-item" data-lokasi="bandung">
+      <div class="card shadow">
+        <img src="/IMAGE/217749882.jpg">
+        <div class="card-body">
+          <h5>PENGINAPAN KEMBANGKUNING</h5>
+          <p>Rp 400.000.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 rumah-item" data-lokasi="bali">
+      <div class="card shadow">
+        <img src="/IMAGE/20230316_101427-01.jpeg">
+        <div class="card-body">
+          <h5>PENGINAPAN GAWAH BUAQ</h5>
+          <p>Rp 200.000.000</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
